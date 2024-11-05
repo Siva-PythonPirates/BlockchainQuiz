@@ -2323,7 +2323,7 @@ def main():
                 
                 time.sleep(1)
                 st.session_state.game_state.next_question()
-                st.experimental_rerun()
+                st.rerun()
         
         if st.session_state.game_state.is_game_over():
             st.session_state.game_state.finish_game()
